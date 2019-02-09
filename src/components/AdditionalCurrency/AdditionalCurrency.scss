@@ -1,0 +1,14 @@
+.additional-currency {
+  background-color: beige;
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 30px;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__button-add {
+    height: 30px;
+  }
+}

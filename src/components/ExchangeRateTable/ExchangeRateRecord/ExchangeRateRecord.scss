@@ -1,0 +1,13 @@
+.exchange-rate-record {
+  &__currency-name {
+    justify-self: center;
+  }
+
+  &__button-refresh {
+    height: 30px;
+  }
+
+  &__refresh-info {
+    padding: 10px;
+  }
+}

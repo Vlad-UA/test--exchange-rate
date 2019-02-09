@@ -1,0 +1,13 @@
+.exchange-rate-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+
+    &__header-cell {
+        justify-self: center;
+        font-weight: 900;
+    }
+}
