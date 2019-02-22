@@ -7,9 +7,23 @@ import configureStore from './store';
 // Components
 import App from './components/App';
 
-ReactDOM.render(
-  <Provider store={configureStore()}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
+const rootEl = document.getElementById('root');
+const store = configureStore();
+
+const render = () => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    rootEl,
+  );
+};
+
+render();
+
+// Hot Module Replacement
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    render();
+  });
+}
